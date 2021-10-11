@@ -1,3 +1,33 @@
+$colors: (
+  "grey": #444b59,
+  "violet": #6542e0
+);
+
+
 body {
-  color: red;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
+
+.violetButton {
+  background-color: map-get($colors , "violet");
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.sideSpacing {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+
+
+@import '../scss/pages/header.scss';
+@import '../scss/pages/footer.scss';
+@import '../scss/pages/index.scss';

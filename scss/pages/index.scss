@@ -1,0 +1,89 @@
+.findSection {
+  background: rgb(68,75,89);
+  background: linear-gradient(180deg, rgba(68,75,89,1) 50%, rgba(33,38,48,1) 100%);
+  color: white;
+  padding: 15px 0;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    margin: -40px 0 15px 0;
+
+    span {
+      font-weight: 300;
+    }
+  }
+  img {
+    display: none;
+  }
+}
+
+.eventSection {
+  color: white;
+  background-color: map-get($colors, 'violet');
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .UpcomingBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .locationBox {
+      width: 64%;
+
+      .upcomingText {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        padding-right: 10px;
+      }
+
+      i {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .upcomingLocation {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    .dateBox {
+      width: 30%;
+      border: solid 1px white;
+      text-align: center;
+      display: block;
+      height: auto;
+      
+
+      .dateBoxDay {
+        font-size: 3.1rem;
+        font-weight: 700;
+        line-height: 1;
+        padding-top: 20px;
+        display: block;
+      }
+
+      .dateBoxMonth {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .year {
+        background-color: white;
+        color: black;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

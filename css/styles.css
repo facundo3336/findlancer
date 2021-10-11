@@ -1,2 +1,108 @@
 body {
-  color: red; }
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; }
+
+.violetButton {
+  background-color: #6542e0;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500; }
+
+.sideSpacing {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+header {
+  background-color: #444b59; }
+
+.headerNav {
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 15px;
+  padding-top: 15px; }
+  .headerNav ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; }
+    .headerNav ul button {
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      font-weight: 400;
+      font-size: 0.95rem;
+      font-family: 'Poppins', sans-serif;
+      padding: 15px 20px;
+      border: 1px solid white;
+      border-radius: 5px; }
+    .headerNav ul li {
+      padding: 5px 0; }
+      .headerNav ul li a {
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        font-size: 0.95rem; }
+
+.findSection {
+  background: #444b59;
+  background: linear-gradient(180deg, #444b59 50%, #212630 100%);
+  color: white;
+  padding: 15px 0;
+  min-height: 250px;
+  display: flex;
+  align-items: center; }
+  .findSection h2 {
+    font-size: 2rem;
+    margin: -40px 0 15px 0; }
+    .findSection h2 span {
+      font-weight: 300; }
+  .findSection img {
+    display: none; }
+
+.eventSection {
+  color: white;
+  background-color: #6542e0;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .eventSection .UpcomingBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .eventSection .UpcomingBox .locationBox {
+      width: 64%; }
+      .eventSection .UpcomingBox .locationBox .upcomingText {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.6); }
+      .eventSection .UpcomingBox .locationBox h5 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        padding-right: 10px; }
+      .eventSection .UpcomingBox .locationBox i {
+        color: rgba(255, 255, 255, 0.6); }
+      .eventSection .UpcomingBox .locationBox .upcomingLocation {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.6); }
+    .eventSection .UpcomingBox .dateBox {
+      width: 30%;
+      border: solid 1px white;
+      text-align: center;
+      display: block;
+      height: auto; }
+      .eventSection .UpcomingBox .dateBox .dateBoxDay {
+        font-size: 3.1rem;
+        font-weight: 700;
+        line-height: 1;
+        padding-top: 20px;
+        display: block; }
+      .eventSection .UpcomingBox .dateBox .dateBoxMonth {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 10px; }
+      .eventSection .UpcomingBox .dateBox .year {
+        background-color: white;
+        color: black;
+        font-size: 0.9rem; }
