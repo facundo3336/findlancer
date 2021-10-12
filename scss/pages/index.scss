@@ -86,4 +86,218 @@
       }
     }
   }
+
+  .hourBox {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    padding-top: 30px;
+
+    .number {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .joinButton {
+      display: none;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    span:last-child {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .joinButton {
+    display: block;
+    margin: 40px auto 0px auto;
+    background-color: white;
+    color: map-get($colors , "violet");
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+}
+
+.joinUsSection {
+  text-align: center;
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .violetLine {
+    width: 40px;
+    border-bottom: 2px solid map-get($colors, 'violet');
+    margin: 0 auto 40px auto;
+  }
+
+  span {
+    font-size: 1.15rem;
+  }
+
+  i {
+    font-size: 1.7rem;
+    color: map-get($colors, 'violet');
+    margin-right: 15px;
+  }
+
+  p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: rgba(110, 108, 108, 0.9);
+  }
+
+  .joinNowButton {
+    width: 90px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+}
+
+.blogSection {
+  .blogContainer {
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .blogBox {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      .latestNewsImg {
+        height: 110px;
+        width: 70%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+      }
+
+      .latestJobsImg {
+        height: 110px;
+        width: 70%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+      }
+
+      .blogText {
+        width: 100%;
+
+        .blogTitle {
+          display: inline-block;
+          font-size: 0.8rem;
+          margin: 0;
+          font-weight: 500;
+          line-height: 1.4;
+        }
+
+        p {
+          font-size: 0.7rem;
+          margin-top: 5px;
+          color: rgba(110, 108, 108, 0.9);
+        }
+      }
+    }
+
+    .lightGreyBackground {
+      background-color: #fbfbfb;
+    }
+
+    .calendar {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(221, 220, 220, 0.9);
+      padding: 20px;
+
+      i {
+        font-size: 1.5rem;
+        color: rgba(156, 156, 156, 0.9);
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+    }
+
+    .datesContainer {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(221, 220, 220, 0.9);
+
+      .dateContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 20px;
+        line-height: 1.2;
+        
+
+        span:first-child {
+          font-weight: 400;
+          font-size: 1rem;
+        }
+
+        .dateContainerDay {
+          font-size: 1.8rem;
+          color: map-get($colors, 'violet');
+          font-weight: 600;
+        }
+
+        span:last-child {
+          font-weight: 400;
+          font-size: 1rem;
+          color: rgba(110, 108, 108, 0.9);
+        }
+      }
+
+      .locationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span:first-child {
+          font-weight: 500;
+          font-size: 0.9rem;
+        }
+
+        .locationDescription {
+          font-weight: 400;
+          font-size: 0.8rem;
+          color: rgba(110, 108, 108, 0.6);
+        }
+
+        i {
+          color: rgba(110, 108, 108, 0.6);
+        }
+
+        span:last-child {
+          color: rgba(41, 40, 40, 0.9);
+          font-weight: 400;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  
 }

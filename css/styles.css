@@ -106,3 +106,149 @@ header {
         background-color: white;
         color: black;
         font-size: 0.9rem; }
+  .eventSection .hourBox {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    padding-top: 30px; }
+    .eventSection .hourBox .number {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    .eventSection .hourBox .joinButton {
+      display: none; }
+    .eventSection .hourBox span {
+      font-size: 1.5rem; }
+    .eventSection .hourBox span:last-child {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6); }
+  .eventSection .joinButton {
+    display: block;
+    margin: 40px auto 0px auto;
+    background-color: white;
+    color: #6542e0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500; }
+
+.joinUsSection {
+  text-align: center; }
+  .joinUsSection h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center; }
+  .joinUsSection .violetLine {
+    width: 40px;
+    border-bottom: 2px solid #6542e0;
+    margin: 0 auto 40px auto; }
+  .joinUsSection span {
+    font-size: 1.15rem; }
+  .joinUsSection i {
+    font-size: 1.7rem;
+    color: #6542e0;
+    margin-right: 15px; }
+  .joinUsSection p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: rgba(110, 108, 108, 0.9); }
+  .joinUsSection .joinNowButton {
+    width: 90px;
+    margin: 0 auto 40px auto;
+    text-align: center; }
+
+.blogSection .blogContainer h4 {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.blogSection .blogContainer .blogBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  .blogSection .blogContainer .blogBox .latestNewsImg {
+    height: 110px;
+    width: 70%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px; }
+  .blogSection .blogContainer .blogBox .latestJobsImg {
+    height: 110px;
+    width: 70%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px; }
+  .blogSection .blogContainer .blogBox .blogText {
+    width: 100%; }
+    .blogSection .blogContainer .blogBox .blogText .blogTitle {
+      display: inline-block;
+      font-size: 0.8rem;
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.4; }
+    .blogSection .blogContainer .blogBox .blogText p {
+      font-size: 0.7rem;
+      margin-top: 5px;
+      color: rgba(110, 108, 108, 0.9); }
+
+.blogSection .blogContainer .lightGreyBackground {
+  background-color: #fbfbfb; }
+
+.blogSection .blogContainer .calendar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(221, 220, 220, 0.9);
+  padding: 20px; }
+  .blogSection .blogContainer .calendar i {
+    font-size: 1.5rem;
+    color: rgba(156, 156, 156, 0.9); }
+  .blogSection .blogContainer .calendar span {
+    font-weight: 500;
+    font-size: 0.9rem; }
+
+.blogSection .blogContainer .datesContainer {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(221, 220, 220, 0.9); }
+  .blogSection .blogContainer .datesContainer .dateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 20px;
+    line-height: 1.2; }
+    .blogSection .blogContainer .datesContainer .dateContainer span:first-child {
+      font-weight: 400;
+      font-size: 1rem; }
+    .blogSection .blogContainer .datesContainer .dateContainer .dateContainerDay {
+      font-size: 1.8rem;
+      color: #6542e0;
+      font-weight: 600; }
+    .blogSection .blogContainer .datesContainer .dateContainer span:last-child {
+      font-weight: 400;
+      font-size: 1rem;
+      color: rgba(110, 108, 108, 0.9); }
+  .blogSection .blogContainer .datesContainer .locationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .blogSection .blogContainer .datesContainer .locationContainer span:first-child {
+      font-weight: 500;
+      font-size: 0.9rem; }
+    .blogSection .blogContainer .datesContainer .locationContainer .locationDescription {
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: rgba(110, 108, 108, 0.6); }
+    .blogSection .blogContainer .datesContainer .locationContainer i {
+      color: rgba(110, 108, 108, 0.6); }
+    .blogSection .blogContainer .datesContainer .locationContainer span:last-child {
+      color: rgba(41, 40, 40, 0.9);
+      font-weight: 400;
+      font-size: 0.75rem; }
