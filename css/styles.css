@@ -252,3 +252,129 @@ header {
       color: rgba(41, 40, 40, 0.9);
       font-weight: 400;
       font-size: 0.75rem; }
+
+.readAboutSection .readAboutTransaprencyContainer {
+  position: relative;
+  margin-top: 50px; }
+  .readAboutSection .readAboutTransaprencyContainer .gradiant {
+    background-image: linear-gradient(to bottom, transparent 60%, white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 240px;
+    width: 100%;
+    z-index: 1; }
+  .readAboutSection .readAboutTransaprencyContainer .readAboutImg {
+    position: relative;
+    background-image: url(../../assets/img/estuidante.jpg);
+    width: 100%;
+    height: 240px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0; }
+
+.readAboutSection .readAboutText {
+  margin-top: 20px; }
+  .readAboutSection .readAboutText span {
+    font-size: 1.2rem;
+    color: rgba(112, 111, 111, 0.9); }
+  .readAboutSection .readAboutText h6 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 10px 0; }
+  .readAboutSection .readAboutText p {
+    font-size: 0.9rem;
+    color: rgba(112, 111, 111, 0.9); }
+
+.communitySection {
+  margin-top: 70px; }
+  .communitySection .tweet {
+    text-align: center;
+    line-height: 1.8; }
+    .communitySection .tweet i {
+      font-size: 2rem;
+      color: #6542e0; }
+    .communitySection .tweet .tweetText {
+      margin-bottom: 0;
+      font-size: 1.1rem; }
+    .communitySection .tweet .hashtag {
+      margin-top: 0;
+      font-size: 1.1rem; }
+      .communitySection .tweet .hashtag a {
+        text-decoration: none;
+        color: #6542e0;
+        font-weight: 500; }
+    .communitySection .tweet .twitterProfile {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .communitySection .tweet .twitterProfile img {
+        height: 40px;
+        width: auto;
+        border-radius: 100%;
+        margin-right: 20px; }
+  .communitySection .communityImages {
+    display: flex;
+    justify-content: center; }
+    .communitySection .communityImages .communityImage {
+      margin-top: 40px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%; }
+      .communitySection .communityImages .communityImage:first-child {
+        display: none; }
+      .communitySection .communityImages .communityImage:last-child {
+        display: none; }
+  .communitySection .instagramNav {
+    background-color: #6542e0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .communitySection .instagramNav a {
+      color: white;
+      text-decoration: none; }
+      .communitySection .instagramNav a i {
+        font-size: 1.4rem;
+        padding-top: 6px;
+        margin-right: 10px; }
+  .communitySection .newsLetterSection {
+    color: white;
+    background: url("../../assets/img/saludando.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center; }
+    .communitySection .newsLetterSection .newsLetterText {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background-color: rgba(101, 66, 224, 0.9); }
+      .communitySection .newsLetterSection .newsLetterText span {
+        font-size: 1.6rem; }
+      .communitySection .newsLetterSection .newsLetterText p {
+        font-size: 0.8rem;
+        color: rgba(206, 203, 203, 0.95); }
+      .communitySection .newsLetterSection .newsLetterText .newsLetterInput {
+        color: white;
+        background: transparent;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        text-align: center; }
+      .communitySection .newsLetterSection .newsLetterText .subscribeButton {
+        background-color: white;
+        color: #6542e0;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        display: block;
+        margin: 20px auto; }
