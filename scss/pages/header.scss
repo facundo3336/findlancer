@@ -10,6 +10,7 @@ header {
       list-style-type: none;
       padding: 0;
       display: none;
+      background: transparent;
 
       button {
         background-color:rgba(0, 0, 0, 0);
@@ -35,4 +36,32 @@ header {
 
       
     }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    position: relative;
+    background: rgb(68,75,89);
+  }
+
+  header {
+    z-index: 3;
+    position: relative;
+    background: transparent;
+
+    .headerNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+
+      ul {
+        background: transparent;
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
 }

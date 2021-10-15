@@ -17,6 +17,14 @@ body {
   padding-left: 20px;
   padding-right: 20px; }
 
+@media screen and (min-width: 1024px) {
+  .generalContainer {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto; }
+  .violetButton {
+    padding: 15px 40px; } }
+
 header {
   background-color: #444b59; }
 
@@ -27,7 +35,8 @@ header {
   .headerNav ul {
     list-style-type: none;
     padding: 0;
-    display: none; }
+    display: none;
+    background: transparent; }
     .headerNav ul button {
       background-color: rgba(0, 0, 0, 0);
       color: white;
@@ -45,6 +54,26 @@ header {
         text-decoration: none;
         font-size: 0.95rem; }
 
+@media screen and (min-width: 1024px) {
+  .header {
+    position: relative;
+    background: #444b59; }
+  header {
+    z-index: 3;
+    position: relative;
+    background: transparent; }
+    header .headerNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent; }
+      header .headerNav ul {
+        background: transparent;
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; } }
+
 .findSection {
   background: #444b59;
   background: linear-gradient(180deg, #444b59 50%, #212630 100%);
@@ -58,7 +87,7 @@ header {
     margin: -40px 0 15px 0; }
     .findSection h2 span {
       font-weight: 300; }
-  .findSection img {
+  .findSection .findSectionImg {
     display: none; }
 
 .eventSection {
@@ -107,10 +136,11 @@ header {
         color: black;
         font-size: 0.9rem; }
   .eventSection .hourBox {
-    display: flex;
-    justify-content: space-around;
     font-weight: 400;
     padding-top: 30px; }
+    .eventSection .hourBox .hourBoxContainer {
+      display: flex;
+      justify-content: space-between; }
     .eventSection .hourBox .number {
       display: flex;
       flex-direction: column;
@@ -164,6 +194,20 @@ header {
 .blogSection .blogContainer h4 {
   font-size: 1.5rem;
   font-weight: 400; }
+
+.blogSection .blogContainer .blogButton {
+  background-color: white;
+  color: #6542e0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 30px;
+  border: 1px solid #6542e0;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 100%; }
+  .blogSection .blogContainer .blogButton:last-child {
+    margin-top: 30px; }
 
 .blogSection .blogContainer .blogBox {
   display: flex;
@@ -414,8 +458,7 @@ footer .terminsFooter {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 15px solid #6542e0; }
+  padding-bottom: 20px; }
   footer .terminsFooter span {
     font-size: 0.7rem;
     color: rgba(105, 103, 103, 0.9); }
@@ -423,3 +466,247 @@ footer .terminsFooter {
     color: rgba(92, 89, 89, 0.9);
     font-size: 1.2rem;
     margin-left: 7px; }
+
+footer .violetLine {
+  border-bottom: 15px solid #6542e0;
+  height: 15px;
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .findSection {
+    padding-bottom: 0;
+    display: block;
+    padding-top: 50px; }
+    .findSection h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      width: 350px; }
+    .findSection .findSectionFlex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .findSection .findSectionImg {
+      display: inline-block;
+      height: 500px;
+      width: 400px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  .eventSection .UpcomingBox {
+    justify-content: center; }
+    .eventSection .UpcomingBox .locationBox {
+      width: 300px; }
+    .eventSection .UpcomingBox .dateBox {
+      width: 150px; }
+  .eventSection .hourBox {
+    justify-content: center; }
+    .eventSection .hourBox .number {
+      margin-left: 20px;
+      margin-right: 20px; }
+  .joinUsSection .joinUsArticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px; }
+  .blogSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px; }
+    .blogSection .blogContainer {
+      width: 350px; }
+  .readAboutSection {
+    text-align: center; }
+    .readAboutSection .readAboutTransaprencyContainer .gradiant {
+      background-image: linear-gradient(to bottom, transparent 60%, #f3f2f2); }
+    .readAboutSection .readAboutText {
+      background-color: #f3f2f2;
+      margin-top: 0;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+  footer .footerNav {
+    display: flex;
+    justify-content: space-between; } }
+
+@media screen and (min-width: 1024px) {
+  .findSection {
+    padding-bottom: 130px;
+    padding-top: 180px;
+    z-index: 1;
+    position: relative; }
+    .findSection h2 {
+      font-size: 4rem;
+      width: 600px; }
+    .findSection .findSectionFlex {
+      display: flex; }
+      .findSection .findSectionFlex .findSectionImg {
+        height: 700px;
+        width: 600px;
+        background-size: cover;
+        position: absolute;
+        right: 320px;
+        top: -140px;
+        z-index: 1; }
+  .eventSection {
+    display: flex;
+    padding-right: 260px;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .eventSection .eventSectionImg {
+      width: 800px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .eventSection .eventContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: center;
+      padding-top: 100px;
+      padding-left: 60px;
+      width: calc((100% - 800px) - ((100% - 1400px) / 2));
+      height: auto;
+      padding-bottom: 100px; }
+      .eventSection .eventContainer .UpcomingBox {
+        justify-content: space-between;
+        padding: 0; }
+        .eventSection .eventContainer .UpcomingBox .locationBox {
+          width: auto; }
+          .eventSection .eventContainer .UpcomingBox .locationBox span {
+            font-size: 1.2rem; }
+            .eventSection .eventContainer .UpcomingBox .locationBox span:last-child {
+              font-size: 0.9rem; }
+          .eventSection .eventContainer .UpcomingBox .locationBox h5 {
+            font-size: 2.5rem; }
+      .eventSection .eventContainer .hourBox {
+        width: 100%;
+        padding: 60px 0 0 0;
+        display: flex;
+        justify-content: space-between; }
+        .eventSection .eventContainer .hourBox .hourBoxTwoPoint {
+          padding-top: 15px;
+          margin-right: 30px; }
+        .eventSection .eventContainer .hourBox .number {
+          margin-right: 30px;
+          margin-left: 0; }
+          .eventSection .eventContainer .hourBox .number span {
+            font-size: 1.1rem;
+            font-weight: 400; }
+          .eventSection .eventContainer .hourBox .number .hourNumber {
+            font-size: 3.2rem; }
+        .eventSection .eventContainer .hourBox .joinButton {
+          display: block;
+          margin: auto 0;
+          padding: 15px 50px; }
+      .eventSection .eventContainer .joinButton {
+        display: none; }
+  .joinUsSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(250, 249, 249, 0.95); }
+    .joinUsSection .joinUsArticles {
+      display: flex;
+      text-align: left; }
+      .joinUsSection .joinUsArticles span {
+        font-weight: 500; }
+      .joinUsSection .joinUsArticles i {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 40px; }
+  .blogSection {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 100px; }
+    .blogSection .blogContainer {
+      width: 100%; }
+      .blogSection .blogContainer h4 {
+        margin: 0;
+        padding-bottom: 20px; }
+      .blogSection .blogContainer .blogButton {
+        margin: 0; }
+        .blogSection .blogContainer .blogButton:last-child {
+          margin: 0; }
+      .blogSection .blogContainer .calendarContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; }
+      .blogSection .blogContainer:last-child {
+        display: flex;
+        flex-direction: column; }
+  .readAboutSection {
+    display: flex;
+    background-color: rgba(250, 249, 249, 0.95); }
+    .readAboutSection .readAboutTransaprencyContainer {
+      margin-top: 0; }
+      .readAboutSection .readAboutTransaprencyContainer .readAboutImg {
+        height: 600px;
+        width: 800px;
+        background-size: cover; }
+      .readAboutSection .readAboutTransaprencyContainer .gradiant {
+        left: 0;
+        top: 0;
+        height: 600px;
+        width: 800px;
+        background-image: linear-gradient(to right, transparent 50%, rgba(250, 249, 249, 0.95)); }
+    .readAboutSection .readAboutText {
+      display: flex;
+      text-align: left;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      width: calc((100% - 800px) - ((100% - 1400px) / 2));
+      background-color: rgba(250, 249, 249, 0.95); }
+      .readAboutSection .readAboutText span {
+        font-size: 1.4rem; }
+      .readAboutSection .readAboutText h6 {
+        font-size: 2.5rem;
+        font-weight: 400; }
+      .readAboutSection .readAboutText p {
+        font-size: 1rem;
+        margin-bottom: 60px; }
+  .communitySection .tweet {
+    margin: 50px auto;
+    width: 800px; }
+    .communitySection .tweet .tweetText {
+      font-size: 1.4rem; }
+    .communitySection .tweet .hashtag {
+      font-size: 1.2rem; }
+    .communitySection .tweet .twitterProfile {
+      font-size: 1.1rem; }
+      .communitySection .tweet .twitterProfile img {
+        height: 55px; }
+  .communitySection .communityImages {
+    overflow: hidden;
+    justify-content: space-between; }
+    .communitySection .communityImages .communityImage {
+      height: 250px;
+      width: 700px; }
+      .communitySection .communityImages .communityImage:first-child {
+        display: block;
+        width: 300px;
+        background-position: right; }
+      .communitySection .communityImages .communityImage:last-child {
+        display: block;
+        width: 300px;
+        background-position: left; }
+  footer .newsLetterFooter .newsLetterText {
+    padding-bottom: 120px;
+    padding-top: 120px; }
+    footer .newsLetterFooter .newsLetterText span {
+      font-size: 2.2rem; }
+    footer .newsLetterFooter .newsLetterText p {
+      font-size: 1rem; }
+    footer .newsLetterFooter .newsLetterText input {
+      width: 330px;
+      font-size: 1.1rem; }
+    footer .newsLetterFooter .newsLetterText .subscribeButton {
+      padding: 15px 50px; }
+  footer .footerNav {
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+  footer .terminsFooter span {
+    font-size: 0.85rem; }
+  footer .terminsFooter .footerSocialMedia a {
+    font-size: 1.4rem; } }
