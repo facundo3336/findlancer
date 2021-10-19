@@ -25,19 +25,19 @@ body {
   .violetButton {
     padding: 15px 40px; } }
 
-header {
+.indexHeader header {
   background-color: #444b59; }
 
-.headerNav {
+.indexHeader .headerNav {
   background-color: rgba(0, 0, 0, 0);
   padding-bottom: 15px;
   padding-top: 15px; }
-  .headerNav ul {
+  .indexHeader .headerNav ul {
     list-style-type: none;
     padding: 0;
     display: none;
     background: transparent; }
-    .headerNav ul button {
+    .indexHeader .headerNav ul button {
       background-color: rgba(0, 0, 0, 0);
       color: white;
       font-weight: 400;
@@ -46,28 +46,49 @@ header {
       padding: 15px 20px;
       border: 1px solid white;
       border-radius: 5px; }
-    .headerNav ul li {
+    .indexHeader .headerNav ul li {
       padding: 5px 0; }
-      .headerNav ul li a {
+      .indexHeader .headerNav ul li a {
         font-weight: 500;
         color: white;
         text-decoration: none;
         font-size: 0.95rem; }
 
+.aboutUsHeader {
+  background-image: url(../../assets/img/manos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .aboutUsHeader .header {
+    background-color: rgba(101, 66, 224, 0.85);
+    padding-top: 20px; }
+    .aboutUsHeader .header .findSection {
+      background-color: rgba(101, 66, 224, 0.85); }
+  .aboutUsHeader .headerNav ul {
+    display: none; }
+  .aboutUsHeader .aboutUsTitle {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+    .aboutUsHeader .aboutUsTitle h2 {
+      font-size: 2.2rem;
+      color: white;
+      text-align: center;
+      font-weight: 600; }
+
 @media screen and (min-width: 1024px) {
-  .header {
+  .indexHeader .header {
     position: relative;
     background: #444b59; }
-  header {
+  .indexHeader header {
     z-index: 3;
     position: relative;
     background: transparent; }
-    header .headerNav {
+    .indexHeader header .headerNav {
       display: flex;
       align-items: center;
       justify-content: space-between;
       background: transparent; }
-      header .headerNav ul {
+      .indexHeader header .headerNav ul {
         background: transparent;
         width: 900px;
         display: flex;
@@ -710,3 +731,59 @@ footer .violetLine {
     font-size: 0.85rem; }
   footer .terminsFooter .footerSocialMedia a {
     font-size: 1.4rem; } }
+
+.aboutUsInfoSection p {
+  font-size: 0.9rem;
+  font-weight: 500; }
+
+.servicesSection {
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  .servicesSection .servicesImg {
+    display: none; }
+  .servicesSection .servicesContainer h4 {
+    font-size: 1.5rem;
+    font-weight: 500; }
+  .servicesSection .servicesContainer .servicesCategories {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(201, 201, 201, 0.5) 2px solid; }
+    .servicesSection .servicesContainer .servicesCategories span {
+      color: rgba(190, 188, 188, 0.5); }
+    .servicesSection .servicesContainer .servicesCategories .activeCategory {
+      border-bottom: #6542e0 2px solid;
+      color: #6542e0;
+      padding-bottom: 10px;
+      margin-bottom: -2px; }
+  .servicesSection .serviceInformation {
+    display: none; }
+    .servicesSection .serviceInformation .serviceDescription {
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .servicesSection .serviceInformation .serviceOptions {
+      font-size: 0.9rem;
+      font-weight: 500; }
+      .servicesSection .serviceInformation .serviceOptions ul {
+        padding-left: 0; }
+        .servicesSection .serviceInformation .serviceOptions ul li {
+          background-image: url(../../assets/img/bullet.svg);
+          list-style: none;
+          background-repeat: no-repeat;
+          padding-left: 35px;
+          background-position: 3px center;
+          margin-bottom: 10px; }
+
+.connectingSection {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .connectingSection h4 {
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .connectingSection p {
+    font-size: 0.9rem;
+    color: rgba(151, 148, 148, 0.9); }
+  .connectingSection img {
+    width: 100%; }

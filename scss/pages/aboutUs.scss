@@ -1,0 +1,89 @@
+.aboutUsInfoSection {
+  p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+.servicesSection {
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  .servicesImg {
+    display: none;
+  }
+
+  .servicesContainer {
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .servicesCategories {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: rgba(201, 201, 201, 0.5) 2px solid;
+      
+      span {
+        color: rgba(190, 188, 188, 0.5);
+      }
+
+      .activeCategory {
+        border-bottom: map-get($colors, 'violet') 2px solid;
+        color: map-get($colors, 'violet');
+        padding-bottom: 10px;
+        margin-bottom: -2px;
+      }
+    }
+    
+  }
+
+  .serviceInformation {
+    display: none;
+
+    .serviceDescription {
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    .serviceOptions {
+      font-size: 0.9rem;
+      font-weight: 500;
+  
+      ul {
+        padding-left: 0;
+  
+        li {
+          background-image: url(../../assets/img/bullet.svg);
+          list-style: none;
+          background-repeat: no-repeat;
+          padding-left: 35px;
+          background-position: 3px center;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.connectingSection {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: rgba(151, 148, 148, 0.9);
+  }
+
+  img {
+    width: 100%;
+  }
+}

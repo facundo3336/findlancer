@@ -1,66 +1,108 @@
-header {
-  background-color: map-get($colors, 'grey');
-}
-
-.headerNav {
-  background-color:rgba(0, 0, 0, 0);
-  padding-bottom: 15px;
-  padding-top: 15px;
-    ul {
-      list-style-type: none;
-      padding: 0;
-      display: none;
-      background: transparent;
-
-      button {
-        background-color:rgba(0, 0, 0, 0);
-        color: white;
-        font-weight: 400;
-        font-size: 0.95rem;
-        font-family: 'Poppins', sans-serif;
-        padding: 15px 20px;
-        border: 1px solid white;
-        border-radius: 5px;
-      }
-
-      li {
-        padding: 5px 0;
-
-        a {
-          font-weight: 500;
-          color: white;
-          text-decoration: none;
-          font-size: 0.95rem;
-        }
-      }
-
-      
-    }
-}
-
-@media screen and (min-width: 1024px) {
-  .header {
-    position: relative;
-    background: rgb(68,75,89);
-  }
-
+.indexHeader {
   header {
-    z-index: 3;
-    position: relative;
-    background: transparent;
-
-    .headerNav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: transparent;
+    background-color: map-get($colors, 'grey');
+  }
+  
+  .headerNav {
+    background-color:rgba(0, 0, 0, 0);
+    padding-bottom: 15px;
+    padding-top: 15px;
 
       ul {
+        list-style-type: none;
+        padding: 0;
+        display: none;
         background: transparent;
-        width: 900px;
+  
+        button {
+          background-color:rgba(0, 0, 0, 0);
+          color: white;
+          font-weight: 400;
+          font-size: 0.95rem;
+          font-family: 'Poppins', sans-serif;
+          padding: 15px 20px;
+          border: 1px solid white;
+          border-radius: 5px;
+        }
+  
+        li {
+          padding: 5px 0;
+  
+          a {
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+          }
+        }
+  
+        
+      }
+  }
+  
+}
+
+.aboutUsHeader {
+  background-image: url(../../assets/img/manos.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .header {
+    background-color: rgba(101, 66, 224, 0.85);
+    padding-top: 20px;
+
+    .findSection {
+      background-color: rgba(101, 66, 224, 0.85);
+    }
+  }
+
+  .headerNav {
+      ul {
+        display: none;
+      }
+  }
+
+  .aboutUsTitle {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 2.2rem;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .indexHeader {
+    .header {
+      position: relative;
+      background: rgb(68,75,89);
+    }
+  
+    header {
+      z-index: 3;
+      position: relative;
+      background: transparent;
+  
+      .headerNav {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: space-between;
+        background: transparent;
+  
+        ul {
+          background: transparent;
+          width: 900px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
       }
     }
   }
