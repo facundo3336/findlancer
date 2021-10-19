@@ -75,6 +75,13 @@ body {
       text-align: center;
       font-weight: 600; }
 
+@media screen and (min-width: 768px) {
+  .aboutUsHeader .aboutUsTitle {
+    padding-bottom: 100px;
+    padding-top: 100px; }
+    .aboutUsHeader .aboutUsTitle h2 {
+      font-size: 3rem; } }
+
 @media screen and (min-width: 1024px) {
   .indexHeader .header {
     position: relative;
@@ -93,7 +100,42 @@ body {
         width: 900px;
         display: flex;
         justify-content: space-around;
-        align-items: center; } }
+        align-items: center; }
+  .aboutUsHeader header {
+    z-index: 3;
+    position: relative;
+    background: transparent;
+    color: white; }
+    .aboutUsHeader header .headerNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent; }
+      .aboutUsHeader header .headerNav ul {
+        background: transparent;
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none; }
+        .aboutUsHeader header .headerNav ul .currentPage {
+          border-bottom: white 2px solid;
+          padding-bottom: 5px; }
+        .aboutUsHeader header .headerNav ul a {
+          color: white;
+          text-decoration: none; }
+        .aboutUsHeader header .headerNav ul .joinUsButton {
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+          padding: 15px 40px;
+          border-radius: 5px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1rem;
+          font-weight: 400; }
+  .aboutUsHeader .aboutUsTitle {
+    padding-top: 150px;
+    padding-bottom: 150px; } }
 
 .findSection {
   background: #444b59;
@@ -734,7 +776,8 @@ footer .violetLine {
 
 .aboutUsInfoSection p {
   font-size: 0.9rem;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-top: 20px; }
 
 .servicesSection {
   padding-bottom: 50px;
@@ -749,7 +792,7 @@ footer .violetLine {
     justify-content: space-between;
     border-bottom: rgba(201, 201, 201, 0.5) 2px solid; }
     .servicesSection .servicesContainer .servicesCategories span {
-      color: rgba(190, 188, 188, 0.5); }
+      color: rgba(70, 70, 70, 0.5); }
     .servicesSection .servicesContainer .servicesCategories .activeCategory {
       border-bottom: #6542e0 2px solid;
       color: #6542e0;
@@ -837,3 +880,75 @@ footer .violetLine {
     color: rgba(151, 148, 148, 0.9); }
   .connectingSection img {
     width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .servicesSection .servicesContainer .servicesCategories {
+    width: 50%; }
+    .servicesSection .servicesContainer .servicesCategories span {
+      cursor: pointer; }
+  .roadMapSection .roadMapContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto; }
+    .roadMapSection .roadMapContainer .roadMapTitles {
+      flex-direction: row;
+      text-align: center;
+      width: 100%; }
+      .roadMapSection .roadMapContainer .roadMapTitles span {
+        width: 15%; }
+    .roadMapSection .roadMapContainer .roadMapLine {
+      flex-direction: row;
+      height: 5px;
+      width: 90%;
+      margin: 30px 0 30px 0; }
+    .roadMapSection .roadMapContainer .roadMapDates {
+      flex-direction: row;
+      width: 95%; } }
+
+@media screen and (min-width: 1024px) {
+  .aboutUsInfoSection {
+    max-width: 800px;
+    margin: 30px auto 30px auto; }
+    .aboutUsInfoSection p {
+      font-size: 0.95rem; }
+  .servicesSection .generalContainer {
+    display: flex;
+    justify-content: space-between; }
+  .servicesSection .servicesContainer {
+    width: 50%; }
+    .servicesSection .servicesContainer h4 {
+      font-size: 1.8rem;
+      font-weight: 400; }
+    .servicesSection .servicesContainer .serviceInformation .serviceOptions ul li {
+      margin-bottom: 20px; }
+  .servicesSection .servicesImg {
+    display: inline-block;
+    width: 45%;
+    height: 450px;
+    background-image: url(../../assets/img/sonriendo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .roadMapSection h4 {
+    font-size: 1.7rem;
+    margin-top: 0; }
+  .roadMapSection p {
+    max-width: 700px;
+    display: block;
+    margin: 30px auto 30px auto;
+    line-height: 2; }
+  .roadMapSection .roadMapContainer .roadMapTitles span {
+    font-size: 1rem; }
+  .roadMapSection .roadMapContainer .roadMapDates span {
+    font-size: 0.9rem; }
+  .connectingSection h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0px; }
+  .connectingSection p {
+    max-width: 700px;
+    margin: 30px auto 30px auto;
+    line-height: 2; }
+  .connectingSection img {
+    width: auto;
+    height: 600px; } }

@@ -76,7 +76,18 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .aboutUsHeader {
+    .aboutUsTitle {
+      padding-bottom: 100px;
+      padding-top: 100px;
 
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .indexHeader {
@@ -105,5 +116,56 @@
         }
       }
     }
+  }
+
+  .aboutUsHeader {
+      header {
+        z-index: 3;
+        position: relative;
+        background: transparent;
+        color: white;
+    
+        .headerNav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: transparent;
+    
+          ul {
+            background: transparent;
+            width: 900px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+
+            .currentPage {
+              border-bottom: white 2px solid;
+              padding-bottom: 5px;
+            }
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+
+            .joinUsButton {
+              background-color: transparent;
+              border: 1px solid white;
+              color: white;
+              padding: 15px 40px;
+              border-radius: 5px;
+              font-family: 'Poppins', sans-serif;
+              font-size: 1rem;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      
+      .aboutUsTitle {
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
   }
 }

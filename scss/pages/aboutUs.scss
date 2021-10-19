@@ -2,6 +2,7 @@
   p {
     font-size: 0.9rem;
     font-weight: 500;
+    padding-top: 20px;
   }
 }
 
@@ -25,7 +26,7 @@
       border-bottom: rgba(201, 201, 201, 0.5) 2px solid;
       
       span {
-        color: rgba(190, 188, 188, 0.5);
+        color: rgba(70, 70, 70, 0.5);
       }
 
       .activeCategory {
@@ -157,5 +158,145 @@
 
   img {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servicesSection {
+    .servicesContainer {
+      .servicesCategories {
+        width: 50%;
+
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .roadMapSection {
+    .roadMapContainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+
+      .roadMapTitles {
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+
+        span {
+          width: 15%;
+        }
+      }
+
+      .roadMapLine {
+        flex-direction: row;
+        height: 5px;
+        width: 90%;
+        margin: 30px 0 30px 0;
+      }
+
+      .roadMapDates {
+        flex-direction: row;
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutUsInfoSection {
+    max-width: 800px;
+    margin: 30px auto 30px auto;
+    
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .servicesSection {
+    .generalContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .servicesContainer {
+      width: 50%;
+
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+
+      .serviceInformation {
+        .serviceOptions {
+          ul {
+            li {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .servicesImg {
+      display: inline-block;
+      width: 45%;
+      height: 450px;
+      background-image: url(../../assets/img/sonriendo.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+  }
+
+  .roadMapSection {
+    h4 {
+      font-size: 1.7rem;
+      margin-top: 0;
+    }
+
+    p {
+      max-width: 700px;
+      display: block;
+      margin: 30px auto 30px auto;
+      line-height: 2;
+    }
+
+    .roadMapContainer {
+      .roadMapTitles {
+        span {
+          font-size: 1rem;
+        }
+      }
+
+      .roadMapDates {
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .connectingSection {
+    h4 {
+      font-size: 1.8rem;
+      margin-bottom: 0px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 30px auto 30px auto;
+      line-height: 2;
+    }
+
+    img {
+      width: auto;
+      height: 600px;
+    }
   }
 }
